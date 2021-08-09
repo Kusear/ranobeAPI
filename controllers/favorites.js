@@ -37,7 +37,8 @@ exports.addFavorites = async (req, res) => {
     nameRUS: req.body.nameRUS,
     ranobeUrl: req.body.ranobeUrl,
     lastChapter: req.body.lastChapter,
-    // image: req.body.image,
+    raiting: req.body.raiting,
+    image: req.body.image,
   };
 
   RANOBE.create(newRanobe)
