@@ -19,6 +19,12 @@ var userSchema = new mongoose.Schema({
   image: {
     type: String,
   },
+  synopsis: {
+    type: String,
+  },
+  raiting: {
+    type: String,
+  },
 });
 
 //Export the model

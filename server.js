@@ -10,6 +10,7 @@ const API_PATH = "/api";
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get(API_PATH + "/checkConnetion", (req, res) => {
   return res.status(200).json({ connectionStatus: "online" }).end();

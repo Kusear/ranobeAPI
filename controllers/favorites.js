@@ -32,6 +32,8 @@ exports.getOneFavRanobe = async (req, res) => {
 
 exports.addFavorites = async (req, res) => {
   console.table(req.body);
+  console.log(req.query);
+  // console.log(req);
   var newRanobe = {
     nameENG: req.body.nameENG,
     nameRUS: req.body.nameRUS,
@@ -39,6 +41,7 @@ exports.addFavorites = async (req, res) => {
     lastChapter: req.body.lastChapter,
     raiting: req.body.raiting,
     image: req.body.image,
+    synopsis: req.body.synopsis,
   };
 
   RANOBE.create(newRanobe)
